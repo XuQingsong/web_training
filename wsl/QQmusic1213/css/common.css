@@ -1,0 +1,858 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* 头部 */
+.header {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.header-top {
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.header-top>div {
+    display: inline-block;
+}
+
+.qq_logo {
+    padding-top: 22px;
+    vertical-align: top;
+}
+
+.qq_logo img {
+    width: 170px;
+    height: 46px;
+}
+
+.qq-title {
+    margin-left: 30px;
+}
+
+.qq-title ul li {
+    float: left;
+    height: 90px;
+    width: 94px;
+    margin-left: -5px;
+}
+
+.qq-title ul li a {
+    color: black;
+    line-height: 90px;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.qq-title ul li a:hover {
+    color: #31c27c;
+}
+
+.qq-title ul li.active a {
+    background: #31C27C;
+    color: white;
+}
+
+.qq-search {
+    vertical-align: top;
+    height: 100%;
+    margin-left: 40px;
+    position: relative;
+}
+
+.qq-search input {
+    width: 180px;
+    height: 32px;
+    margin-top: 28px;
+    padding-right: 38px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+    text-indent: 10px;
+    font-size: 14px;
+    color: #A9A9A9;
+    font-weight: normal;
+    outline-style: none;
+}
+
+.qq-search .icon-search {
+    display: inline-block;
+    width: 38px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.qq-search .icon-search:hover span {
+    background-position: 0px -60px;
+
+}
+
+.qq-search .icon-search span {
+    background-image: url('../images/icon_sprite.png');
+    background-position: 0px -40px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.qq-search-list {
+    display: none;
+    width: 218px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    height: auto;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    border-top: 0;
+    padding-top: 5px;
+    z-index: 100;
+}
+
+.qq-search-list li {
+    height: 36px;
+    padding: 0 10px;
+}
+
+.qq-search-list li:hover {
+    background: #31c27c;
+    cursor: pointer;
+}
+
+.qq-search-list li:hover a span {
+    color: white !important;
+}
+
+.qq-search-list a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.qq-search-list a span:nth-child(1) {
+    color: #ff4222;
+    float: left;
+}
+
+.qq-search-list a span:nth-child(2) {
+    color: #333;
+    float: left;
+    margin-left: 10px;
+}
+
+.qq-search-list a span:nth-child(3) {
+    float: right;
+    color: #999;
+}
+
+.qq-search-list ul:last-child li a span:first-child {
+    color: #333;
+}
+
+.qq-search-list ul:last-child li a span:last-child {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 8px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 24px;
+}
+
+.search-history {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    padding: 0 10px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    line-height: 36px;
+}
+
+.search-history span:first-child {
+    font-size: 14px;
+    color: #999;
+    float: left;
+}
+
+.search-history span:last-child {
+    cursor: pointer;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background: url('../images/icon_sprite.png');
+    background-position: -96px 1px;
+}
+
+.search-history span:last-child:hover {
+    background-position: -16px -59px;
+}
+
+.qq-other {
+    height: 100%;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.qq-login {
+    display: inline-block;
+    height: 105%;
+    line-height: 90px;
+    margin-right: 20px;
+}
+
+.qq-other button {
+    padding: 0 5px;
+    height: 38px;
+    margin-right: 20px;
+    border: 0;
+    cursor: pointer;
+    outline-color: none;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+}
+
+.green-dialogue {
+    background: #31c27c;
+}
+
+.green-dialogue:hover {
+    background: #2caf6f;
+}
+
+button.pay-bag {
+    border: 1px solid #c9c9c9;
+    background: #fff;
+    color: #333;
+}
+
+.pay-bag:hover {
+    background: #ededed;
+}
+
+.header-bottom {
+    margin-left: 230px;
+    width: auto;
+    height: 50px;
+}
+
+.header-bottom ul li {
+    margin-right: 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+.header-bottom ul li a {
+    color: #333;
+    font-size: 15px;
+}
+
+.header-bottom ul li.active a {
+    color: #31c27c;
+}
+
+.header-bottom ul li a:hover {
+    color: #31c27c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 热门歌单 */
+h2 {
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.playlist_list {
+    width: 1526.4px;
+    height: 556px;
+}
+
+.playlist_list .section_inner {
+    width: 1200px;
+    height: 532px;
+    margin: 0 163.2px;
+
+}
+
+.index_tab {
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.index_tab a {
+    display: inline-block;
+    margin: 24px;
+}
+
+.mod_playlist {
+    width: 1220px;
+    height: 310px;
+    margin: 0 -20px 20px 0;
+    position: relative;
+}
+
+.mod_playlist_switch {
+    display: block;
+    height: 38px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+/* .mod_playlist__slide {
+    width: 15250px;
+    height: 310px;
+    margin: 0 -20px 0 0;
+    
+} */
+
+
+.mod_playlist img {
+    width: 224px;
+    height: 224px;
+}
+
+.mod_playlist__slide_item {
+    display: block;
+    width: 244px;
+    height: 310px;
+    float: left;
+}
+
+.playlist__item_box {
+    width: 224px;
+    height: 283px;
+    margin-right: 20px;
+    /* background-color: sandybrown; */
+    text-align: center;
+}
+
+.mod_playlist_switch_item1 {
+    display: block;
+    width: 28px;
+    height: 12px;
+    padding-bottom: 26px;
+    margin: 0 1px;
+    /* background-color: sandybrown; */
+
+    position: absolute;
+    left: 570px;
+}
+
+
+.mod_playlist_switch_item2 {
+    display: block;
+    width: 28px;
+    height: 12px;
+    padding-bottom: 26px;
+    margin: 0 1px;
+    /* background-color: sandybrown; */
+    float: left;
+    position: absolute;
+    left: 600px;
+}
+
+.slide_switch__bg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    background-color: seagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 热门歌单 轮播图 */
+.scroll-left {
+    width: 70px;
+    height: 108px;
+    margin-top: 153px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    float: left;
+}
+
+.scroll-right {
+    width: 70px;
+    height: 108px;
+    margin-top: 153px;
+    background-color: rgb(93, 43, 158);
+    position: absolute;
+    top: 200px;
+    right: 0;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 新歌首发 */
+.newsong_list {
+    width: 1526.4px;
+    height: 556px;
+}
+
+.newsong_list .section_inner {
+    width: 1200px;
+    height: 556px;
+    margin: 0 163.2px;
+}
+
+.song_tab {
+    height: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+
+.song_tab ul {
+    margin-left: 347px;
+    height: 50px;
+}
+
+.song_tab li {
+    float: left;
+    padding: 0 35px;
+
+}
+
+.song_tab li a {
+    color: #000000;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 排行榜 */
+.rankingList {
+    width: 1526.4px;
+    height: 675.05px;
+    padding-bottom: 10px;
+}
+
+.ranking_head {
+    width: 1200px;
+    height: 40px;
+    padding: 50px 163.2px 24px 163.2px;
+    /* background-color: #000000; */
+}
+
+.ranking_txt {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0);
+}
+
+.ranking_Box {
+    width: 1200px;
+    height: 567px;
+    padding: 50px 163.2px 24px 163.2px;
+}
+
+.ranking__list {
+    width: 224px;
+    height: 450px;
+    margin-right: 15px;
+    float: left;
+    background-color: seagreen;
+    text-align: center;
+}
+
+.list_bg {
+    margin: 20px 0 10px 0;
+    font-size: 25px;
+}
+
+.ranking_mask {
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px 0S;
+}
+
+.song_singer {
+    padding-bottom: 20px;
+}
+
+/* 广告 */
+.popup_guide {
+    width: 144px;
+    height: 96.6px;
+    padding: 18px;
+    position: fixed;
+    top: 164px;
+    right: 40px;
+    z-index: 1001;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .07);
+    background-color: #fff;
+}
+
+.popup_guide img {
+    width: 102px;
+    height: 27.6px;
+    margin: 0 21px 9px 21px;
+}
+
+.popup_guide p {
+    width: 144px;
+    height: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #a6a6a6;
+}
+
+.popup_guide a {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 26px;
+    margin: 0 7px;
+    border-radius: 26px;
+    line-height: 26px;
+    font-size: 15px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #31C27C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+
+.footer {
+    width: 1526.4px;
+    height: 470px;
+    background-color: #333;
+    color: #999;
+    overflow: hidden;
+}
+
+.footer_inner {
+    width: 1200px;
+    height: 470px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_inner h3 {
+    font-size: 15px;
+
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+
+.footer_inner a {
+    color: #999;
+
+}
+
+.footer_info {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+}
+
+.footer_inner li {
+    float: left;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer_inner li:hover a {
+    color: #31c27c;
+}
+
+.footer_inner li i {
+    display: block;
+    margin: 0 29px 12px;
+    height: 48px;
+}
+
+.footer_info ul,
+.footer_product ul {
+    margin-left: -29px;
+}
+
+.footer_info .download_item1 i {
+
+    width: 37px;
+
+    background: url(../images/footer.png) -2px 0;
+}
+
+.footer_info li:hover,
+.footer_product li:hover {
+    color: #31c27c;
+}
+
+.footer_info .download_item1:hover i {
+    background: url(../images/footer.png) -2px -49px;
+}
+
+.footer_info .download_item2 i {
+    width: 46px;
+    background: url(../images/footer.png) -92px 0;
+}
+
+.footer_info .download_item2:hover i {
+    background: url(../images/footer.png) -92px -49px;
+}
+
+.footer_info .download_item3 i {
+    width: 37px;
+    background: url(../images/footer.png) -190px 0;
+}
+
+.footer_info .download_item3:hover i {
+    background: url(../images/footer.png) -190px -49px;
+}
+
+.footer_info .download_item4 i {
+    width: 34px;
+    background: url(../images/footer.png) -279px 0;
+}
+
+.footer_info .download_item4:hover i {
+    background: url(../images/footer.png) -279px -49px;
+}
+
+.footer_product {
+    position: absolute;
+    top: 0;
+    left: 476px;
+    width: 304px;
+}
+
+.footer_product li {
+    font-size: 14px;
+    height: 80px;
+    float: left;
+    margin-bottom: 18px;
+    margin-right: 5px;
+}
+
+.footer_product .product_item1 i {
+    width: 41px;
+    background: url(../images/footer.png) -370px 0;
+
+}
+
+.footer_product .product_item1:hover i {
+    background: url(../images/footer.png) -370px -49px;
+}
+
+.footer_product .product_item2 i {
+    width: 37px;
+    background: url(../images/footer.png) -463px 0;
+}
+
+.footer_product .product_item2:hover i {
+    background: url(../images/footer.png) -463px -49px;
+}
+
+.footer_product .product_item3 i {
+    width: 40px;
+    background: url(../images/footer.png) -563px 0;
+}
+
+.footer_product .product_item3:hover i {
+    background: url(../images/footer.png) -563px -49px;
+}
+
+.footer_link {
+    float: right;
+    width: 300px;
+    padding-bottom: 57px;
+}
+
+.footer_link li {
+    float: left;
+    margin-bottom: 12px;
+    width: 100px;
+}
+
+.footer_copyRight {
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+
+
+
+
+    text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+}
+
+.footer_copyRight p {
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
