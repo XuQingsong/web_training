@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>轻松教育</title>
     <link rel="stylesheet" href="QSJY.CSS">
-    <link rel="stylesheet" href="QSJY.JS">
+    <!-- <link rel="stylesheet" href="QSJY.js"> -->
+    
     <link rel="icon" href="./photo/icon1.ico">
 </head>
 
@@ -40,7 +41,7 @@
     <banner>
         <div class="banner">
             <div class=" center w">
-                <div class="subnav">
+                <!-- <div class="subnav">
                     <ul>
                         <li><a href="#">前端开发 <span> > </span> </a></li>
                         <li><a href="#">后端开发 <span> > </span> </a></li>
@@ -52,8 +53,8 @@
                         <li><a href="#">UI设计 <span> > </span> </a></li>
                         <li><a href="#">产品 <span> > </span> </a></li>
                     </ul>
-                </div>
-                <div class="course">
+                </div> -->
+                <!-- <div class="course">
                     <h2>推荐课程</h2>
 
                     <div class="line1">
@@ -83,7 +84,22 @@
                     <div class="line3">
                         <a href="#">全部课程</a>
                     </div>
-                </div>
+                </div> -->
+                <ul id='img-banner'>
+                    <li>
+                        <img src="./photo/banner01.png" alt="">
+                    </li>
+                    <li class="active">
+                        <img src="./photo/banner02.png" alt="">
+                    </li>
+                </ul>
+                <!-- <img src="./photo/banner01.png" alt="">
+                <img src="./photo/banner02.png" alt=""> -->
+                
+            </div>
+            <div class="banner-dot" id="banner-dot">
+                <div class="dot" ><span value='0'></span></div>
+                <div class="dot" ><span value='1' class="active"></span></div>
             </div>
         </div>
     </banner>
@@ -352,6 +368,7 @@
         </div>
     </footer>
     <!-- </footer>结束 -->
+    <script src="./QSJY.js"></script>
 </body>
 
 </html>

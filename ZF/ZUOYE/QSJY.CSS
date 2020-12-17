@@ -115,13 +115,63 @@ a {
 .banner {
     height: 421px;
     background-color: #1c036c;
+    position: relative;
 }
 .banner .center {
     height: 421px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
 	background-image: url(./photo/benner02.png);
 	
-    background-position: top center;
+    background-position: top center; */
+}
+.banner .center li.active {
+    display: block;
+    /* background-repeat: no-repeat;
+	background-image: url(./photo/benner02.png);
+	
+    background-position: top center; */
+}
+.banner .center li {
+    display: none;
+    /* background-repeat: no-repeat;
+	background-image: url(./photo/benner02.png);
+	
+    background-position: top center; */
+}
+.banner .banner-dot  {
+    /* display: none; */
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 20%;
+}
+.banner .banner-dot .dot {
+    display: inline-block;
+    cursor: pointer;
+   
+}
+/* .banner .banner-dot .dot.active {
+    background-color: #333;
+   
+} */
+.banner .banner-dot span {
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.banner .banner-dot span.active {
+    background-color: transparent;
+}
+.banner .banner-dot span:after {
+    /* border: 2px solid #fff; */
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 .banner .center .subnav {
     float: left;
