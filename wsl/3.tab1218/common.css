@@ -1,0 +1,51 @@
+.slide {
+    margin: 100px auto;
+    width: 320px;
+    height: 480px;
+    text-align: center;
+    position: relative;
+}
+
+.slide #img {
+    height: 100%;
+    width: 100%;
+}
+
+.dot {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    padding: 4px 0;
+    line-height: 20px;
+}
+
+.dot span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: snow;
+    border-radius: 50%;
+}
+
+.dot .active {
+    background-color: #e00;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 205px;
+    height: 70px;
+    width: 70px;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
