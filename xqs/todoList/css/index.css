@@ -1,0 +1,63 @@
+/* @media (min-width: 1200px) { 
+  .container {
+    width: 1240px;
+  }
+} */
+
+.title {
+  font-size: 24px;
+  background-color: #346fef;
+  color: #fff;
+}
+
+.glyphicon {
+  top: 4px;
+}
+
+.title-text {
+  margin-left: 24px;
+}
+
+.add {
+  margin-top: 12px;
+}
+/* 
+.text-center {
+
+} */
+.control-label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.list-group-item {
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list-header {
+  border-bottom: 2px solid #333;
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.badge {
+  margin-left: 48px;
+}
+
+.glyphicon-ok-sign {
+  color: #3e69e4;
+}
+
+.finish-text {
+  margin-left: 12px;
+  color: rgba(33, 33, 33, 0.5);
+  text-decoration: line-through;
+}
+
+.processing-text {
+  margin-left: 12px;
+}
