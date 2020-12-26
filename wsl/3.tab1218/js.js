@@ -18,6 +18,7 @@ var spans = document.getElementsByTagName('span');
 		}
 		dot.innerHTML = str;
 
+		
 		function restartInterval() {
 			interval = setInterval(function () {
 				if (i == imgLength) {
@@ -32,9 +33,9 @@ var spans = document.getElementsByTagName('span');
 		}
 		restartInterval();
 		
+
 		prev.onclick = function () {
 			clearInterval(interval);
-
 			if (i == 0) {
 				i = imgLength;
 			}
@@ -44,14 +45,12 @@ var spans = document.getElementsByTagName('span');
 			}
 			document.getElementById(i).classList.add('active'); 
 			img.src = './images/' + imgArray[--i];
-
 			restartInterval();
 		}
 
 		
 		next.onclick = function () {
 			clearInterval(interval);
-
 			if (i == imgLength - 1) {
 				i = -1;
 			}
@@ -59,8 +58,6 @@ var spans = document.getElementsByTagName('span');
 				spans[a].classList.remove('active'); 
 			}
 			document.getElementById(i + 2).classList.add('active'); 
-
 			img.src = './images/' + imgArray[++i];
-
 			restartInterval();
 		}

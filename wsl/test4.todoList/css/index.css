@@ -1,0 +1,59 @@
+.title {
+    font-size: 24px;
+    background-color: #346fef;
+    color: #fff;
+}
+
+.glyphicon {
+    top: 2px;
+}
+
+.title-text {
+    top: 2px;
+    margin-right: 20px;
+}
+
+.add {
+    margin-top: 12px;
+}
+
+.control-laber {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.list-group-item {
+    border: 0;
+}
+
+.list-header {
+    border-bottom: 2px solid #333;
+    margin: 12px 0;
+    font-weight: 600px;
+    font-size: 24px;
+}
+
+/* 
+.processing,
+.finish {
+    border-bottom: 1px solid gray;
+} */
+
+.badge {
+    margin-left: 50px;
+}
+
+.glyphicon-ok-sign {
+    color: #3e69e4;
+}
+
+.finish-text {
+    margin-left: 12px;
+    color: rgba(33, 33, 33, 0.5);
+    text-decoration: line-through;
+}
+
+.processing-text {
+    margin-left: 12px;
+}
