@@ -1,4 +1,4 @@
-(function () {
+(function() {
   var initValue = ['this is init value 1', 'this is init value 2', 'this is init value 3']
 
   var addNode = function() { 
@@ -6,6 +6,8 @@
     // var html = '<li class="list-group-item" value=' + i + '>' + node +  '</li>'
     // $('#processing .list-group').prepend(html)
     initValue.unshift(node)
+    renderList(initValue)
+    console.log(initValue)
     $('.form-control').val('')
   }
 
@@ -16,12 +18,14 @@
     var newNode = $('#processing .list-group-item:eq(' + index + ')')
     $('#finish .list-group').prepend(newNode)
     initValue.splice(index, 1)
+    console.log(initValue)
+    renderList(initValue)
   }
 
-  renderList = function(initValue) {
+  var renderList = function(initValue) {
     $('#processing .list-group').empty()
     for(let i=0; i<initValue.length; i++) {
-      var html = '<li class="list-group-item" value=' + i + '>' + initValue[i] +  '</li>'
+      var html = '<li class="list-group-item" value=' + i + '>' + initValue[i] +  '</li>' //'<li class="list-group-item" value=0>this is init value 1</li>
       $('#processing .list-group').append(html)
     }
   }
@@ -29,10 +33,10 @@
   renderList(initValue)
 
   // 绑定add，添加输入值到processing
-  $('.btn').click( function() { addNode(); renderList(initValue) } )
+  $('.btn').click( function() { addNode() } )
   
   // 点击processing item，该item添加至finish
-  $('#processing .list-group').click( function(e) { addFinish(e); renderList(initValue) } )
+  $('#processing .list-group').click( function(e) { addFinish(e) } )
 
 })()
 
