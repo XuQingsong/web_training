@@ -1,9 +1,0 @@
-.form-inline {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-}
-.sr-only {
-    display: flex;
-    flex-direction: row;
-}
