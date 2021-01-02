@@ -1,0 +1,29 @@
+.left,
+.right {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left div,
+.right div {
+    width: 100px;
+    height: 90px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    border: 1px solid #ccc;
+}
+.left div {
+    background: #ccc;
+}
+.right div {
+    background: yellow;
+}
+#main p {
+    border: 1px solid rebeccapurple;
+}
+a {
+    border: 1px solid red;
+}

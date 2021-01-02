@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./photos.css">
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+    <div class="left first-div">
+        <div class="div">
+            <ul class="level-1">
+                <li class="item-1">1</li>
+                <li class="item-2">2</li>
+                <li class="item-3">3</li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul class="level-2">
+                <li class="item-1">1</li>
+                <li class="item-2">2</li>
+                <li class="item-3">3</li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul class="level-3">
+                <li class="item-1">1</li>
+                <li class="item-2">2</li>
+                <li class="item-3">3</li>
+            </ul>
+        </div>
+    </div>
+    <button id="bt3">无作用</button>
+    <button id="bt4">children传递表达式</button>
+ <!-- <div class="left">
+     <div class="arr">点击任何部分会生成=元素节点</div>
+ </div> -->
+<div>
+<button id="bt1">删除内部p1元素内的元素</button>
+<button id="bt2">删除p3元素整个节点</button>
+</div>
+<div class="right">
+    <div id="test1">
+        <p>p1</p>
+        <p>p1元素</p>
+    </div>
+    <div id="test2">
+        <p>p3元素</p>
+        <p>p3</p>
+    </div>
+    <div>
+        <p>p2不删除的</p>
+        <p>p2</p>
+    </div>
+</div>
+<div>
+    <button class="add1">wrap方法加父元素</button>
+    <button class="add2">wrap的回调加</div>
+</div>
+<div class="right" id="main">
+    <p>p元素</p>
+    <p>p元素</p>
+</div>
+<div class="left">
+    <a>a元素</a>
+    <a>a元素</a>
+</div>
+    <script src="./photos.js"></script>
+</body>
+</html>
