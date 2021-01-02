@@ -1,59 +1,108 @@
 .title {
+    height: 50px;
+    line-height: 50px;
     font-size: 24px;
-    background-color: #346fef;
-    color: #fff;
+    background-color: #3c2dc0;
+    color: rgb(255, 255, 255);
 }
 
-.glyphicon {
+.title input {
+    width: 50%;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    margin: auto 0 auto 100px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    /* margin-left: 100px; */
+    background-color: rgb(255, 0, 0);
+}
+
+#todocount,
+#donecount {
+    width: 25px;
+    height: 25px;
+    /* margin-right: 220px; */
+    line-height: 25px;
+    float: right;
+    border-radius: 50%;
+    background-color: rgb(156, 148, 148);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+ol,
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li input {
+    position: absolute;
     top: 2px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }
 
-.title-text {
-    top: 2px;
-    margin-right: 20px;
+p {
+    margin: 0;
 }
 
-.add {
-    margin-top: 12px;
+li p input {
+    top: 3px;
+    left: 40px;
+    width: 70%;
+    height: 20px;
+    line-height: 14px;
+    text-indent: 5px;
+    font-size: 14px;
 }
 
-.control-laber {
-    padding-top: 7px;
-    margin-bottom: 0;
-    text-align: right;
+li {
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #3c2dc0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
-.list-group-item {
-    border: 0;
+ol li {
+    cursor: move;
 }
 
-.list-header {
-    border-bottom: 2px solid #333;
-    margin: 12px 0;
-    font-weight: 600px;
-    font-size: 24px;
-}
-
-/* 
-.processing,
-.finish {
-    border-bottom: 1px solid gray;
-} */
-
-.badge {
-    margin-left: 50px;
-}
-
-.glyphicon-ok-sign {
-    color: #3e69e4;
-}
-
-.finish-text {
-    margin-left: 12px;
-    color: rgba(33, 33, 33, 0.5);
+ul li {
     text-decoration: line-through;
+    border-left: 5px solid #999;
+    opacity: 0.5;
 }
 
-.processing-text {
-    margin-left: 12px;
+li a {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 5px;
+    border-radius: 5px;
+    border: 10px #FFF;
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+footer {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 450px;
 }

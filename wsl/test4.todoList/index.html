@@ -6,64 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <div class=" title">
+    <header class=" title">
         <div class="container">
             <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
             <span class="title-text">To Do</span>
+            <input type="text" id="title" class="form-control" placeholder="ADD New Todo by 'Enter'" autofocus>
+            <button type="button" class="btn btn-primary">clear ALL!</button>
         </div>
-    </div>
-    <div class="container">
-        <div class="add">
-            <form class="form">
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 control-laber">Add New Todo:</div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Add New Todo" autofocus>
-                        </div>
-                        <div class="col-ma-1">
-                            <button type="button" class="btn btn-primary">ADD</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="processing">
-            <div class="list-header">
-                <span>正在进行</span><span class="badge">10</span>
-            </div>
-            <ul class="list-group list-unstyle">
-                <li class="list-group-item">
-                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-                    <span class="processing-text">Cras justo odio</span>
-                </li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-        </div>
-        <div class="finish">
-            <div class="list-header">
-                <span>已完成</span><span class="badge">10</span>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-                    <span class="finish-text">Cras justo odio</span>
-                </li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-        </div>
-    </div>
+    </header>
 
+    <section class="container">
+        <div class="todo">
+            <h3>正在进行<span id="todocount"></span></h3>
+            <ol class="demo-box" id="todolist">
+                <!-- <li>
+                    <input type="checkbox" value="" />
+                    <p>1</p>
+                    <a href=""></a>
+                </li> -->
+            </ol>
+        </div>
+
+        <div class="done">
+            <h3>已完成<span id="donecount"></span></h3>
+            <ul class="demo-box" id="donelist">
+                <!-- <li>
+                    <input type="checkbox" value="" />
+                    <p>1</p>
+                    <a href=""></a>
+                </li> -->
+            </ul>
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            使用说明：<br>
+            输入文字,敲击键盘“enter”添加todo，<br>
+            点击按钮“clear ALL”清空全部事项。
+        </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
