@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用ES6的class类封装的轮播图</title>
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+
+<body>
+    <div class="swiper-container banner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="./images/3.jpeg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/4.jpeg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/5.jpeg" alt=""></li>
+        </ul>
+        <ol class="swiper-pagination"></ol>
+        <div class="swiper-button-prev">上一页</div>
+        <div class="swiper-button-next">下一页</div>
+    </div>
+    <script src="js/swiper.js"></script>
+
+   <!--  使用ES6的class类封装的轮播图 含自动播放   -->
+
+
+    <script>
+        new Swiper('.banner', {
+            autoplay: 2000, //自动播放定时器
+            direction: 'horizontal', //horizontal,vercation
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
+            }
+        })
+    </script>
+
+</body>
+
+</html>

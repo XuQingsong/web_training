@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.banner {
+    width: 1500px;
+    height: 1000px;
+    margin: 100px auto;
+}
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination li.active {
+    background: skyblue;
+}
+
+.swiper-pagination li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 2px;
+    background: rgba(0,0,0,.5);
+    color:#fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px;
+    height: 80px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    cursor: pointer;
+    display: none;
+    text-align:center;
+    line-height:80px;
+    color:#fff;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
